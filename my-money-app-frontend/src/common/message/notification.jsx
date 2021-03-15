@@ -1,0 +1,19 @@
+import React from 'react';
+import ReduxToastr from 'react-redux-toastr'
+import 'modules/react-redux-toastr/lib/css/react-redux-toastr.css'
+
+// Cmoponente das notificações
+const Notification = (props) => {
+    return ( 
+        <ReduxToastr
+            timeOut={4000}
+            newestOnTop={false}
+            preventDuplicates={true}
+            position='top-right'
+            transitionIn='fadeInd'
+            transitionOut='fadeOut'
+            progressBar/>
+     );
+}
+ 
+export default Notification;
